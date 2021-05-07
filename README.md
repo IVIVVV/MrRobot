@@ -19,10 +19,10 @@ basically what this does is to remove all repeated lines
 - Now since we dont know what the username is, we cant just brute force both username and password at the same time cause we dont have all days and we are all busy people
 + There are lots of tool out there to find the username but im just going to use hydra cause im a noob:
 + hydra -vV -L <username list> -p <random password> <ip> http-post-form '/<path to login>:log=^USER^&pwd=^PASS^&wp-submit=Log+In:F=Invalid username'
-username list: the list that you filtered earlier 
-random password: lets just put something like "ihatemylife" since we dont need the real password just yet
-path to login: we all know what this is
-log=^USER^&pwd=^PASS^&wp-submit=Log+In : ^USER^ and ^PASS^ are placeholders that wiil be replaced with the actual values.
++ username list: the list that you filtered earlier 
++ random password: lets just put something like "ihatemylife" since we dont need the real password just yet
++ path to login: we all know what this is
++ log=^USER^&pwd=^PASS^&wp-submit=Log+In : ^USER^ and ^PASS^ are placeholders that wiil be replaced with the actual values.
 + That was me being extra, since we know this is a wordpress login page we can just use the wpscan: wpscan --url <path> -enumerate u 
 + And with that we got 2 username and lets try our luck by brute forcing 1 by 1 
 + After i leave the computer running by itself i now have the account Elliot:ER28-0652 now all i have to do is just to login and see something i can mess with
