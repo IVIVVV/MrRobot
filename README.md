@@ -29,7 +29,7 @@ basically what this does is to remove all repeated lines
 
 - By "something i can mess with" i meant REVERSE SHELL 
 + You can just go to the revershell code i put in my project and change some stuff like ip and port, pop that in something thing like the 404.php save it and we are done for now
-+ Go ahead and type in 10.1.1.11/ihatemyself which is some random path and return the 404.php oh i forgot to mention u should do: nc -lvnp <port> before searching for the
++ Go ahead and type in 10.1.1.11/ihatemyself which is some random path and return the 404.php oh i forgot to mention u should do: "nc -lvnp port" before searching for the
 path, this will setup a listener on that <port>
 + type in id and we seem to be login as daemon lets check for some directories. Start off with home list that we we got robot cd into that and bingo we go the 2nd key
 but i got access denied hmmm... oh wait the password is right there in the password.raw-md5 cat into that we got the username and password but that password looks weird
