@@ -6,7 +6,7 @@ Link to that machine: https://www.vulnhub.com/entry/mr-robot-1,151/
 
 
 - Let's start by running an nmap using the command: nmap -sS -T4 <IP/url range>. In my case the ip range is 10.1.1.10-100 and the target's ip is 10.1.1.11.
-Hmmm port 23, 80, 443 are open.... looks like we got ourself a website, lets check it using a webroswer and... nothing seems to be helpful
+Hmmm port 23, 80, 443 are open.... looks like we got ourself a website, lets check it using a webrowser and... nothing seems to be helpful
 
 - We now know that its a website lets continue by doing a fuzz in my case im going to use nikto: nikto -h <10.1.1.11> or you can just use nmap -sV --script=http-enum <10.1.1.11>. 
 + The result returned some paths to wordpress login pages, we will check that out later. BUT we can now have some hope for reverse shell!
