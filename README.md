@@ -9,7 +9,7 @@ Link to that machine: https://www.vulnhub.com/entry/mr-robot-1,151/
 Hmmm port 23,80,443 are open.... looks like we got ourself a website, lets check it using a webroswer and... nothing seems to be helpful
 
 - We now know that its a website lets continue by doing a fuzz in my case im going to use nikto: nikto -h <10.1.1.11> or you can just use nmap -sV --script=http-enum <10.1.1.11>. 
-+ The result returned some links to wordpress login pages, we will check that out later. BUT we can now have some hope for reverse shell!
++ The result returned some paths to wordpress login pages, we will check that out later. BUT we can now have some hope for reverse shell!
 + robots.txt looks juicy lets go there first! and as expected we got our first flag
 not only that we also got our hands on the "fsocity.dic" access and download it, seems to be some kind of username/password list AND YOU KNOW WHAT THAT MEANS!
 thats right brute force time
