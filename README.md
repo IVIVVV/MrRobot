@@ -11,7 +11,7 @@ Hmmm port 23,80,443 are open.... looks like we got ourself a website, lets check
 - We now know that its a website lets continue by doing a fuzz in my case im going to use nikto: nikto -h <10.1.1.11> or you can just use nmap -sV --script=http-enum <10.1.1.11>. 
 + The result returned some paths to wordpress login pages, we will check that out later. BUT we can now have some hope for reverse shell!
 + robots.txt looks juicy lets go there first! and as expected we got our first flag
-not only that we also got our hands on the "fsocity.dic" access and download it, seems to be some kind of username/password list AND YOU KNOW WHAT THAT MEANS!
+, not only that we also got our hands on the "fsocity.dic" access and download it, seems to be some kind of username/password list AND YOU KNOW WHAT THAT MEANS!
 thats right brute force time
 Before trying brute force let's make the job simpler for our computer shall we? Lets run the cat sorting code: cat <fsociety.dic> | uniq >> <your new file> 
 basically what this does is to remove all repeated lines
@@ -39,11 +39,11 @@ python -c 'import pty;pty.spawn("/bin/bash")'
 and access that user "robot": su robot. open the txt folder and we got ourself the 2nd key
 
 - After finding the second key i got stuck and have no idea where else to look for, after some research(days after) i learned that i can execute shell from nmap
-+ from there i remembered that there was a directory with nmap so i did what i have to do: nmap --interactive and that actually works following the guides in this site
++ from there i remembered that there was a directory with nmap so i did what i have to do: nmap --interactive and that actually works following the guides on this site
 https://gtfobins.github.io/gtfobins/nmap/
 + the command: 
 nmap --interactive
-nmap> !sh
+nmap> !sh.
 and now we are root :D 
 
 - List everything within root directory and we see the last key and GG! I CAN FINALLY SLEEP NOW  
