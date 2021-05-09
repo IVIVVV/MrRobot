@@ -39,7 +39,7 @@ python -c 'import pty;pty.spawn("/bin/bash")'
 and access that user "robot": su robot. open the txt folder and we got ourself the 2nd key
 
 - After finding the second key i got stuck and have no idea where else to look for, after some research(days after) i learned that i can execute shell from nmap
-+ from there i remembered that there was a directory with nmap when i was searching in "find / -perm / 6000" so i did what i have to do: nmap --interactive and that actually works following the guides on this site
++ from there i remembered that there was a directory with nmap when i was searching in "find / -perm / 6000" (finds files that have the setuid bit set or the setgid bit set) so i did what i have to do: nmap --interactive and that actually works following the guides on this site
 https://gtfobins.github.io/gtfobins/nmap/
 + the command: 
 nmap --interactive
