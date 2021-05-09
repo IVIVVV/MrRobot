@@ -13,7 +13,7 @@ Hmmm port 23, 80, 443 are open.... looks like we got ourself a website, lets che
 + robots.txt looks juicy lets go there first! and as expected we got our first flag
 , not only that we also got our hands on the "fsocity.dic" access and download it, seems to be some kind of username/password list AND YOU KNOW WHAT THAT MEANS!
 thats right brute force time
-Before trying brute force let's make the job simpler for our computer shall we? Lets run the cat sorting code: cat <fsociety.dic> | uniq >> <your new file> 
+Before trying brute force let's make the job simpler for our computer shall we? Lets run the cat sorting code: cat <fsociety.dic> | uniq >> "your new file" 
 basically what this does is to remove all repeated lines
 
 - Now since we dont know what the username is, we cant just brute force both username and password at the same time cause we dont have all days and we are all busy people
