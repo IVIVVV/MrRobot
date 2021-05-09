@@ -18,7 +18,7 @@ basically what this does is to remove all repeated lines
 
 - Now since we dont know what the username is, we cant just brute force both username and password at the same time cause we dont have all days and we are all busy people
 + There are lots of tool out there to find the username but im just going to use hydra cause im a noob:
-+ hydra -vV -L <username list> -p <random password> <ip> http-post-form '/"path to login":log=^USER^&pwd=^PASS^&wp-submit=Log+In:F=Invalid username'
++ hydra -vV -L "username list" -p "random password" "ip" http-post-form '/"path to login":log=^USER^&pwd=^PASS^&wp-submit=Log+In:F=Invalid username'
 + username list: the list that you filtered earlier 
 + random password: lets just put something like "ihatemylife" since we dont need the real password just yet
 + path to login: we all know what this is
