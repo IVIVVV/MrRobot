@@ -23,7 +23,7 @@ basically what this does is to remove all repeated lines
 + random password: lets just put something like "ihatemylife" since we dont need the real password just yet
 + path to login: we all know what this is
 + log=^USER^&pwd=^PASS^&wp-submit=Log+In : ^USER^ and ^PASS^ are placeholders that wiil be replaced with the actual values.
-+ That was me being extra, since we know this is a wordpress login page we can just use the wpscan: wpscan --url <path> -enumerate u 
++ That was me being extra, since we know this is a wordpress login page we can just use the wpscan: wpscan --url "path" -enumerate u 
 + And with that we got 2 username and lets try our luck by brute forcing 1 by 1 
 + After i leave the computer running by itself i now have the account Elliot:ER28-0652 now all i have to do is just to login and see something i can mess with
 
