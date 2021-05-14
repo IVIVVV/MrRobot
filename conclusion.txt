@@ -1,1 +1,8 @@
+This was not a realistic website but a base to an understanding of how things should go 
 
+I learned some basic enumeration like robots.txt. After i was finished with this VM i 
+looked up a few walkthrough of many others and i found out that you can guess the 
+user name was "eliot" through some research related to "mr.robots" which was the name 
+of the VM. I also realize brute forcing is not as powerful as i thought without a 
+proper wordlist, in this challange they just gave us the wordlist and make the job 
+so much easier(that is why i said this VM is not realistic).
